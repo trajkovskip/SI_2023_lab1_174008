@@ -1,0 +1,53 @@
+$git log
+Author: trajkovskip <peroutest@gmail.com>
+Date:   Mon Mar 13 19:27:12 2023 +0100                                               
+                                                                                     
+    Fix method sumEvenNumbers                                                        
+                                                                                     
+commit ea915a6bbab066a3b2aa4bf74aa896713842892e                                      
+Merge: 7673508 38e03a6                                                               
+Author: trajkovskip <peroutest@gmail.com>                                            
+Date:   Mon Mar 13 19:31:07 2023 +0100                                               
+                                                                                     
+    Merge branch 'bug2'
+
+$git log -p -2
+commit e22b06a61bc1c79753c82c605b23fc8d61ff6e11 (HEAD -> master, origin/master, bug3)
+Author: trajkovskip <peroutest@gmail.com>
+Date:   Mon Mar 13 19:27:12 2023 +0100
+
+    Fix method sumEvenNumbers
+
+diff --git a/SILab1.java b/SILab1.java
+index 1b95127..93353dc 100644
+--- a/SILab1.java
++++ b/SILab1.java
+@@ -14,10 +14,10 @@ public class SILab1 {
+     }
+
+$git log -–stat
+commit e22b06a61bc1c79753c82c605b23fc8d61ff6e11 (HEAD -> master, origin/master, bug3)
+Author: trajkovskip <peroutest@gmail.com>
+Date:   Mon Mar 13 19:27:12 2023 +0100
+
+    Fix method sumEvenNumbers
+
+ SILab1.java | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit ea915a6bbab066a3b2aa4bf74aa896713842892e
+Merge: 7673508 38e03a6
+Author: trajkovskip <peroutest@gmail.com>
+Date:   Mon Mar 13 19:31:07 2023 +0100
+
+$git log --pretty=oneline
+e22b06a61bc1c79753c82c605b23fc8d61ff6e11 (HEAD -> master, origin/master, bug3) Fix method sumEvenNumbers
+ea915a6bbab066a3b2aa4bf74aa896713842892e Merge branch 'bug2'
+38e03a6727c9f60639a76dcfd61cb3747abae1ab (bug2) Fix wrong condition in filterOddNumbers
+7673508a9f9e47b98e03c79d242d8c54542b3d43 (bug1) Fix wrong loop for reading
+b6889b31ef7fd2105a9d82566a151eaa40883dff Add java class
+78216e3c5c55460f4db52309e0609636e9d9e167 Initial commit
+
+$git log --pretty=format:"%h - %an, %ar : %s
+
+
